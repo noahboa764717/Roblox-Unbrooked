@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
+<py-script>
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -20,4 +21,5 @@ driver = webdriver.Chrome(options = chrome_options)
 
 driver.get('https://roblox.com/login')
 driver.find_element(By.XPATH,'//*[@id="login-username"]').send_keys(text.decode(username))
-driver.find_element(By.XPATH,'//*[@id="login-password"]').send_keys(text.decode(password+Keys.ENTER))
+driver.find_element(By.XPATH,'//*[@id="login-password"]').send_keys(text.decode(password+Keys.ENTER)
+  </py-script>
